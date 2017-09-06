@@ -1,3 +1,8 @@
+<%-- 
+    Document   : Alta
+    Created on : 25/08/2017, 08:52:58 PM
+    Author     : Medina Villalpando Josue de Jesus
+--%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -8,13 +13,14 @@
     <body>
           <%@page import="java.sql.*,java.io.*" %>
         <% 
-            
+          
+             
             String nombree = request.getParameter("nombre");
             String apellidopp = request.getParameter("apellidop");
             String apellidomm =request.getParameter("apellidom");
             String escuelaa = request.getParameter("escuela");
+           
             
-            System.out.println(nombree);
             Connection con=null;
             Statement sta=null;
             try{
